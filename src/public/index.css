@@ -1,0 +1,65 @@
+body{
+    background-color: #2a2f4c;
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: #2978b5; 
+}
+::-webkit-scrollbar {
+    width: 5px; 
+}
+h1{
+    color: #cdcdff;
+}
+.projects-container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.project{
+    min-width: 250px;
+    height: 300px;
+    margin-top: 40px;
+    flex: 1;
+    flex-direction: column;
+    transition: flex, transform,  .5s;
+}
+.project-img{
+    height: 70%;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    filter: brightness(.7);
+}
+.project-tile{
+    height: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: #90a0d9;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+    
+}
+.project:hover{
+    flex: 2;
+    transform: scale(1.1);
+}
+.project:hover .project-img{
+    filter: brightness(1);
+}
+.project-tile a{
+    width: 15px;
+    margin: 0 auto;
+}
